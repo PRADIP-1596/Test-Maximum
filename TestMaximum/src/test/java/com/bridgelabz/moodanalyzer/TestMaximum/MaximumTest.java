@@ -1,6 +1,4 @@
 package com.bridgelabz.moodanalyzer.TestMaximum;
-
-import com.bridgelabz.testmaximum.Maximum;
 import org.junit.Assert;
 import org.junit.Test;
 
