@@ -1,17 +1,20 @@
 package com.bridgelabz.moodanalyzer.TestMaximum;
 
-public class Maximum {
+import java.util.Arrays;
+
+public class Maximum<E> {
     /**
+     * Method to sort and find out maximum value from array
      *
-     * @param maxInt
+     * @param value
      * @return
      */
-    public Integer findMaximum(Integer[] maxInt ) {
-        Integer max = 0;
-        for (Integer index : maxInt) {
-            if (index.compareTo(max) > 0)
-                max = index;
-        }
+    public E findMaximum(E... value) {
+        int length = value.length;
+        Arrays.sort(value);
+        E max = value[length - 1];
+        System.out.println(max);
         return max;
     }
+
 }
